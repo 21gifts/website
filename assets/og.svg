@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#f7931a" stop-opacity="0.22" />
+      <stop offset="60%" stop-color="#f7931a" stop-opacity="0.04" />
+      <stop offset="100%" stop-color="#f7931a" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="text-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e8e6ea" />
+    </linearGradient>
+  </defs>
+
+  <!-- full canvas dark, content sits in y=285..915 (a 630-tall band) -->
+  <rect width="1200" height="1200" fill="#0a090c" />
+
+  <g transform="translate(0, 285)">
+    <!-- glow within the 1200x630 band -->
+    <rect width="1200" height="630" fill="url(#glow)" />
+
+    <!-- hairline frame -->
+    <rect x="40" y="40" width="1120" height="550" rx="20" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+
+    <!-- eyebrow -->
+    <text x="600" y="170"
+          font-family="-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="22" font-weight="600" letter-spacing="6"
+          text-anchor="middle" fill="#f7931a">
+      PEER-TO-PEER · BITCOIN LIGHTNING · NOSTR
+    </text>
+
+    <!-- wordmark -->
+    <text x="600" y="320"
+          font-family="-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="160" font-weight="700" letter-spacing="-4"
+          text-anchor="middle" fill="url(#text-grad)">
+      21.gifts
+    </text>
+
+    <!-- tagline line 1 -->
+    <text x="600" y="410"
+          font-family="-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="34" font-weight="500"
+          text-anchor="middle" fill="#ffffff" opacity="0.85">
+      Direct human-to-human gifts.
+    </text>
+    <!-- tagline line 2 -->
+    <text x="600" y="458"
+          font-family="-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="34" font-weight="500"
+          text-anchor="middle" fill="#ffffff" opacity="0.65">
+      No middleman. No custody. No fees.
+    </text>
+
+    <!-- URL pill -->
+    <g transform="translate(600, 540)">
+      <rect x="-110" y="-26" width="220" height="52" rx="26" fill="none" stroke="#f7931a" stroke-width="1.5" />
+      <text x="0" y="8"
+            font-family="-apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+            font-size="22" font-weight="600" letter-spacing="2"
+            text-anchor="middle" fill="#f7931a">
+        21.gifts
+      </text>
+    </g>
+  </g>
+</svg>
