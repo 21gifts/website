@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>21.gifts — Peer-to-peer Bitcoin Lightning gifts</title>
+        <meta
+            name="description"
+            content="Direct human-to-human gifts over Bitcoin Lightning. No platform takes a cut. No middleman holds your funds."
+        />
+        <meta property="og:title" content="21.gifts — Peer-to-peer Bitcoin Lightning gifts" />
+        <meta
+            property="og:description"
+            content="Direct human-to-human gifts over Bitcoin Lightning. No platform takes a cut. No middleman holds your funds."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://21.gifts/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="21.gifts — Peer-to-peer Bitcoin Lightning gifts" />
+        <meta
+            name="twitter:description"
+            content="Direct human-to-human gifts over Bitcoin Lightning. No platform takes a cut. No middleman holds your funds."
+        />
+        <link rel="canonical" href="https://21.gifts/" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    </head>
+
+    <body>
+        <header class="fade-in">
+            <a href="/" class="logo-link">
+                <span class="logo-text">21.gifts</span>
+            </a>
+            <nav>
+                <a href="#how">How it works</a>
+                <a href="#why">Why</a>
+                <a href="#faq">FAQ</a>
+                <a href="https://app.21.gifts" class="nav-cta">Open app</a>
+            </nav>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="hero fade-in">
+            <div class="glow"></div>
+            <div class="headline">
+                <h1 class="slide-up">
+                    Direct human-to-human gifts
+                    <br />
+                    over Bitcoin Lightning
+                </h1>
+                <p class="slide-up delay-300">
+                    Ask for help, or send help, without an organization in the middle. Funds flow donor to receiver
+                    directly — the platform never custodies a satoshi.
+                </p>
+                <div class="hero-ctas slide-up delay-600">
+                    <a href="https://app.21.gifts/ask" class="button">Ask for help</a>
+                    <a href="https://app.21.gifts" class="button button-ghost">Send help</a>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <section id="how">
+                <h1>How it works</h1>
+                <h2>Three steps, no accounts in the traditional sense</h2>
+                <p>
+                    21.gifts uses a Passkey on your device as your identity. There are no usernames, no passwords, and
+                    no email sign-ups. Behind the scenes the Passkey derives a NOSTR key — but you never have to think
+                    about it.
+                </p>
+                <div class="steps-list">
+                    <div class="step">
+                        <span class="step-num">01</span>
+                        <h3>Post a request</h3>
+                        <p>
+                            Sign in with a Passkey. Describe what you need in a short message and add your Lightning
+                            Address. That's the entire setup.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">02</span>
+                        <h3>Your story spreads</h3>
+                        <p>
+                            Your message is published as a NOSTR event. It appears on 21.gifts, and on every NOSTR
+                            client that follows the same relay — Damus, Amethyst, and others.
+                        </p>
+                    </div>
+                    <div class="step">
+                        <span class="step-num">03</span>
+                        <h3>Gifts arrive directly</h3>
+                        <p>
+                            Donors pay your Lightning Address from their own wallet. Satoshis land in your wallet, not
+                            ours. The platform never sees the money.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="why">
+                <h1>Why this exists</h1>
+                <h2>The shortest possible path from one person to another</h2>
+                <div class="why-list">
+                    <div class="why-item">
+                        <h3>Truly peer-to-peer</h3>
+                        <p>
+                            Funds move from the donor's Lightning wallet to the receiver's Lightning Address. 21.gifts
+                            never holds, routes, or escrows the money. There is nothing for us to freeze.
+                        </p>
+                    </div>
+                    <div class="why-item">
+                        <h3>Self-sovereign keys</h3>
+                        <p>
+                            Your NOSTR key is derived from a Passkey on your own device, using the WebAuthn PRF
+                            extension. The server never sees the private key, and cannot impersonate you or read your
+                            future messages.
+                        </p>
+                    </div>
+                    <div class="why-item">
+                        <h3>Open protocol</h3>
+                        <p>
+                            Every message is a standard NOSTR event. If 21.gifts disappears tomorrow, your identity and
+                            your posts continue to exist on the relay and in every NOSTR client that has them.
+                        </p>
+                    </div>
+                    <div class="why-item">
+                        <h3>Non-profit by design</h3>
+                        <p>
+                            There is no take-rate, no platform fee, and no fundraising round to recoup. The project
+                            covers its own infrastructure cost and nothing more.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq">
+                <h1>FAQ</h1>
+                <h2>Common questions, answered briefly</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>Who can post a request?</summary>
+                        <p>
+                            Anyone with a device that supports Passkeys and a Lightning Address from any custodial or
+                            self-custodial wallet. No application, no review process.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do you take a cut of the gifts?</summary>
+                        <p>
+                            No. Payments go directly from the donor's wallet to the receiver's Lightning Address.
+                            21.gifts is never in the payment path and earns nothing per transaction.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What happens to my keys?</summary>
+                        <p>
+                            Your Passkey lives in your device's secure enclave (or in iCloud Keychain / Google Password
+                            Manager / Bitwarden / a hardware authenticator, depending on your setup). 21.gifts derives a
+                            NOSTR key from it inside your browser. The server only ever sees signed events, never the
+                            private key itself.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I lose access to my account?</summary>
+                        <p>
+                            If your Passkey syncs through iCloud, Google, 1Password, or Bitwarden, restoring a device
+                            also restores access. On sign-up you can also choose to write down a 12-word backup phrase
+                            (NIP-06) — it recovers the same identity in 21.gifts and in any NOSTR client.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What is NOSTR doing in the background?</summary>
+                        <p>
+                            NOSTR is the message transport. Every request you post, and every comment under it, is a
+                            signed NOSTR event published to a public relay. You never have to know this — but it means
+                            the content lives on an open protocol, not inside a private database.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Why only Bitcoin Lightning?</summary>
+                        <p>
+                            Lightning is the only payment rail that is fast, low-fee, censorship-resistant, and works
+                            with simple addresses like email. It removes the need for any custodial layer and lets
+                            anyone in the world give or receive without permission.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is this regulated, and how do taxes work?</summary>
+                        <p>
+                            21.gifts is a non-profit communication and discovery layer. It is not a payment service
+                            provider and does not move funds. Donors and receivers are responsible for their own tax
+                            treatment in their jurisdiction.
+                        </p>
+                    </details>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <span class="footer-name">21.gifts</span>
+                <nav class="footer-nav">
+                    <a href="#how">How it works</a>
+                    <a href="#why">Why</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="/legal.html">Legal & Privacy</a>
+                </nav>
+                <a href="https://github.com/21gifts" class="footer-social" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </footer>
+
+        <script>
+            document.querySelector('.nav-toggle').addEventListener('click', function () {
+                document.querySelector('header nav').classList.toggle('open');
+            });
+        </script>
+    </body>
+</html>
